@@ -13,9 +13,7 @@ from langchain_classic.chains import RetrievalQAWithSourcesChain
 
 # WARNING: It is not safe to hardcode API keys in code.
 # Better to use a .env file, but keeping it here as per your request.
-os.environ[
-    "OPENAI_API_KEY"] = "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"
-
+api_key = st.secrets["OPENAI_API_KEY"]
 st.title("📰 News Research Tool")
 st.sidebar.title("News Article URLs")
 
